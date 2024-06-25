@@ -1,5 +1,5 @@
 message = "One of Python's strengths is its diverse community."
 print(message)
 
-# This one will produce an error:
-# message = 'One of Python's strengths is its diverse community.'
+# This one doesn't work because it reads the apostrophe as the end of the string:
+message = 'One of Python's strengths is its diverse community.'
