@@ -33,6 +33,11 @@ print(f"Dear {guest_list[3]}, You are cordially invited to join me for dinner.")
 print(f"Dear {guest_list[4]}, You are cordially invited to join me for dinner.")
 print(f"Dear {guest_list[5]}, You are cordially invited to join me for dinner.")
 
+# Exercise 3-9
+print(
+    f"The length of my guest list before I start uninviting everyone is {len(guest_list)}."
+)
+
 # Exercise 3-7
 print(
     "Sorry guys, my table won't arrive in time so I can only have two people over for dinner."
@@ -63,3 +68,21 @@ del guest_list[1]
 del guest_list[0]
 
 print(f"guest_list is now {guest_list}")
+
+# Exercise 3-8
+places_to_visit = ["cannes", "ibiza", "australia", "new zealand", "canada"]
+print(places_to_visit)
+print(sorted(places_to_visit))
+print(places_to_visit)
+print(sorted(places_to_visit, reverse=True))
+print(places_to_visit)
+places_to_visit.reverse()
+print(places_to_visit)
+places_to_visit.reverse()
+print(places_to_visit)
+places_to_visit.sort()
+print(places_to_visit)
+places_to_visit.sort(reverse=True)
+print(places_to_visit)
+
+# Exercise 3-10
