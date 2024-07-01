@@ -86,3 +86,70 @@ places_to_visit.sort(reverse=True)
 print(places_to_visit)
 
 # Exercise 3-10
+my_languages = ["english", "french", "spanish", "italian"]
+print("Exercise 3-10")
+print(my_languages)
+print(f"My native language is {my_languages[0].title()}")
+print(f"The language I started learning most recently is {my_languages[-1].title()}")
+print(f"The language I started learning before that was {my_languages[-2].title()}")
+my_languages[0] = "gibberish"
+print(my_languages)
+my_languages.append("ukrainian")
+print(my_languages)
+my_languages = []
+print(f"my_languages = {my_languages}")
+my_languages.append("english")
+my_languages.append("french")
+my_languages.append("spanish")
+my_languages.append("italian")
+print(my_languages)
+my_languages.insert(1, "gibberish")
+print(my_languages)
+del my_languages[1]
+print(my_languages)
+most_recent_language = my_languages.pop()
+print(my_languages)
+print(most_recent_language)
+print(f"The language I began learning most recently is {most_recent_language.title()}.")
+first_language = my_languages.pop(0)
+print(my_languages)
+print(first_language)
+print(
+    f"My native language, aka the first language I ever learned, is {first_language.title()}."
+)
+my_languages.remove("spanish")
+print(my_languages)
+remaining_language = "french"
+my_languages.remove(remaining_language)
+print(my_languages)
+print(
+    f"Now that I have used the remove() method to remove {remaining_language.title()} from the list, the my_languages list now looks like this: {my_languages}"
+)
+my_languages = ["french", "spanish", "italian", "french"]
+print(my_languages)
+occurrence = "french"
+my_languages.remove(occurrence)
+print(my_languages)
+print(
+    f"The value '{occurrence}' occurred both at the beginning and the end of the list, but the remove() method only deletes the first occurrence of something, so the updated list looks like this: {my_languages}."
+)
+my_languages.sort()
+print(my_languages)
+my_languages.sort(reverse=True)
+print(my_languages)
+some_languages = ["welsh", "arabic", "punjabi"]
+print(f"Here is the original some_languages list: {some_languages}")
+print(f"Here is the sorted (alphabetical) version: {sorted(some_languages)}")
+print(
+    f"Here is the reverse-alphabetical version: {sorted(some_languages, reverse=True)}"
+)
+print(
+    f"And here is the original list again: {some_languages}. The sorted() function displayed it alphabetically (and then in reverse) for me, but didn't affect the order of the actual list."
+)
+cities = ["london", "paris", "madrid", "rome"]
+print(cities)
+cities.reverse()
+print(cities)
+cities.reverse()
+print(cities)
+print(f"There are {len(cities)} cities in my list.")
