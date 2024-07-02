@@ -153,3 +153,11 @@ print(cities)
 cities.reverse()
 print(cities)
 print(f"There are {len(cities)} cities in my list.")
+
+# Exercise 3-11 (Intentional index errors):
+
+# print(cities[4])
+empty_list = []
+# print(empty_list[0])
+# print(empty_list[1])
+# print(empty_list[-1])
