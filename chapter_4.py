@@ -96,16 +96,32 @@
 
 # Exercise 4-12:
 
-my_foods = ["pizza", "falafel", "carrot cake"]
-friend_foods = my_foods[:]
+# my_foods = ["pizza", "falafel", "carrot cake"]
+# friend_foods = my_foods[:]
 
-my_foods.append("crisps")
-friend_foods.append("nuts")
+# my_foods.append("crisps")
+# friend_foods.append("nuts")
 
-print("My favourite foods are:")
-for item in my_foods:
-    print(item)
+# print("My favourite foods are:")
+# for item in my_foods:
+#     print(item)
 
-print("\nMy friend's favourite foods are:")
-for item in friend_foods:
-    print(item)
+# print("\nMy friend's favourite foods are:")
+# for item in friend_foods:
+#     print(item)
+
+
+# Exercise 4-13:
+
+buffet_foods = ("bread", "cheese", "ham", "salad", "fruit")
+print("The items on our buffet menu are as follows:")
+for item in buffet_foods:
+    print(item.title())
+
+# Produce an error by trying to modify an item in the tuple:
+# buffet_foods[0] = "crackers"
+
+buffet_foods = ("crackers", "cheese", "ham", "salad", "cakes")
+print("\nThe items on our buffet menu have been updated and are now as follows:")
+for item in buffet_foods:
+    print(item.title())
