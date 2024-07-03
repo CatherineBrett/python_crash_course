@@ -71,7 +71,24 @@
 
 # Exercise 4-10:
 
-animals = ["cat", "dog", "squirrel", "whale", "dolphin", "mongoose"]
-print(f"The first three items in this list are: {animals[:3]}.")
-print(f"Three items from the middle of the list are: {animals[2:5]}.")
-print(f"The last three items in the list are: {animals[-3:]}.")
+# animals = ["cat", "dog", "squirrel", "whale", "dolphin", "mongoose"]
+# print(f"The first three items in this list are: {animals[:3]}.")
+# print(f"Three items from the middle of the list are: {animals[2:5]}.")
+# print(f"The last three items in the list are: {animals[-3:]}.")
+
+
+# Exercise 4-11:
+
+my_pizzas = ["margherita", "calabrese", "fiorentina"]
+friend_pizzas = my_pizzas[:]
+
+my_pizzas.append("romagnola")
+friend_pizzas.append("capricciosa")
+
+print("My favourite pizzas are:")
+for pizza in my_pizzas:
+    print(pizza.title())
+
+print("\nMy friend's favourite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza.title())
