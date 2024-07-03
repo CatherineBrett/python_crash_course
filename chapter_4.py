@@ -12,3 +12,58 @@ animals = ["cat", "dog", "squirrel"]
 for animal in animals:
     print(f"A {animal} has a tail.")
 print("All of the animals above have tails.\n")
+
+
+# Exercise 4-3:
+
+for value in range(1, 21):
+    print(value)
+
+
+# Exercise 4-4:
+
+numbers = list(range(1, 1000001))
+for number in numbers:
+    print(number)
+
+
+# Exercise 4-5:
+
+numbers_again = list(range(1, 1000001))
+print(min(numbers_again))
+print(max(numbers_again))
+print(sum(numbers_again))
+
+
+# Exercise 4-6:
+
+odd_numbers = list(range(1, 21, 2))
+for odd_number in odd_numbers:
+    print(odd_number)
+
+
+# Exercise 4-7:
+
+multiples_of_three = list(range(3, 31, 3))
+for multiple_of_three in multiples_of_three:
+    print(multiple_of_three)
+
+
+# Exercise 4-8:
+
+first_ten_cubes = []
+for value in range(1, 11):
+    cube = value**3
+    first_ten_cubes.append(cube)
+    print(cube)
+
+cubes = []
+for value in range(1, 11):
+    cubes.append(value**3)
+    print(value**3)
+
+
+# Exercise 4-9:
+
+cubes = [value**3 for value in range(1, 11)]
+print(cubes)
