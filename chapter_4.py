@@ -79,36 +79,36 @@
 
 # Exercise 4-11:
 
-# my_pizzas = ["margherita", "calabrese", "fiorentina"]
-# friend_pizzas = my_pizzas[:]
+my_pizzas = ["margherita", "calabrese", "fiorentina"]
+friend_pizzas = my_pizzas[:]
 
-# my_pizzas.append("romagnola")
-# friend_pizzas.append("capricciosa")
+my_pizzas.append("romagnola")
+friend_pizzas.append("capricciosa")
 
-# print("My favourite pizzas are:")
-# for pizza in my_pizzas:
-#     print(pizza.title())
+print("My favourite pizzas are:")
+for pizza in my_pizzas:
+    print(pizza.title())
 
-# print("\nMy friend's favourite pizzas are:")
-# for pizza in friend_pizzas:
-#     print(pizza.title())
+print("\nMy friend's favourite pizzas are:")
+for pizza in friend_pizzas:
+    print(pizza.title())
 
 
 # Exercise 4-12:
 
-# my_foods = ["pizza", "falafel", "carrot cake"]
-# friend_foods = my_foods[:]
+my_foods = ["pizza", "falafel", "carrot cake"]
+friend_foods = my_foods[:]
 
-# my_foods.append("crisps")
-# friend_foods.append("nuts")
+my_foods.append("crisps")
+friend_foods.append("nuts")
 
-# print("My favourite foods are:")
-# for item in my_foods:
-#     print(item)
+print("My favourite foods are:")
+for item in my_foods:
+    print(item)
 
-# print("\nMy friend's favourite foods are:")
-# for item in friend_foods:
-#     print(item)
+print("\nMy friend's favourite foods are:")
+for item in friend_foods:
+    print(item)
 
 
 # Exercise 4-13:
@@ -122,6 +122,6 @@ for item in buffet_foods:
 # buffet_foods[0] = "crackers"
 
 buffet_foods = ("crackers", "cheese", "ham", "salad", "cakes")
-print("\nThe items on our buffet menu have been updated and are now as follows:")
+print("\nThe items on our menu have been updated and are now as follows:")
 for item in buffet_foods:
     print(item.title())
