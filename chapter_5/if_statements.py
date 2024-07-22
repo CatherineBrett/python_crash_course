@@ -60,19 +60,35 @@
 
 # Exercise 5-6
 
-age = 41
+# age = 41
 
-if age < 2:
-    stage = "baby"
-elif age < 4:
-    stage = "toddler"
-elif age < 13:
-    stage = "kid"
-elif age < 20:
-    stage = "teenager"
-elif age < 65:
-    stage = "adult"
-else:
-    stage = "elder"
+# if age < 2:
+#     stage = "baby"
+# elif age < 4:
+#     stage = "toddler"
+# elif age < 13:
+#     stage = "kid"
+# elif age < 20:
+#     stage = "teenager"
+# elif age < 65:
+#     stage = "adult"
+# else:
+#     stage = "elder"
 
-print(f"Your stage of life is {stage}.")
+# print(f"Your stage of life is {stage}.")
+
+
+# Exercise 5-7
+
+favorite_fruits = ["strawberries", "grapes", "satsumas"]
+
+if "strawberries" in favorite_fruits:
+    print("I really like strawberries!")
+if "kiwis" in favorite_fruits:
+    print("I really like kiwis!")
+if "grapes" in favorite_fruits:
+    print("I really like grapes!")
+if "blueberries" in favorite_fruits:
+    print("I really like blueberries!")
+if "satsumas" in favorite_fruits:
+    print("I really like satsumas!")
