@@ -30,29 +30,49 @@
 
 # Exercise 5-5
 
-alien_color = "green"
+# alien_color = "green"
 
-if alien_color == "green":
-    print("You have earned 5 points!")
-elif alien_color == "yellow":
-    print("You have earned 10 points")
+# if alien_color == "green":
+#     print("You have earned 5 points!")
+# elif alien_color == "yellow":
+#     print("You have earned 10 points")
+# else:
+#     print("You have earned 15 points!")
+
+# alien_color = "yellow"
+
+# if alien_color == "green":
+#     print("You have earned 5 points!")
+# elif alien_color == "yellow":
+#     print("You have earned 10 points")
+# else:
+#     print("You have earned 15 points!")
+
+# alien_color = "red"
+
+# if alien_color == "green":
+#     print("You have earned 5 points!")
+# elif alien_color == "yellow":
+#     print("You have earned 10 points")
+# else:
+#     print("You have earned 15 points!")
+
+
+# Exercise 5-6
+
+age = 41
+
+if age < 2:
+    stage = "baby"
+elif age < 4:
+    stage = "toddler"
+elif age < 13:
+    stage = "kid"
+elif age < 20:
+    stage = "teenager"
+elif age < 65:
+    stage = "adult"
 else:
-    print("You have earned 15 points!")
+    stage = "elder"
 
-alien_color = "yellow"
-
-if alien_color == "green":
-    print("You have earned 5 points!")
-elif alien_color == "yellow":
-    print("You have earned 10 points")
-else:
-    print("You have earned 15 points!")
-
-alien_color = "red"
-
-if alien_color == "green":
-    print("You have earned 5 points!")
-elif alien_color == "yellow":
-    print("You have earned 10 points")
-else:
-    print("You have earned 15 points!")
+print(f"Your stage of life is {stage}.")
