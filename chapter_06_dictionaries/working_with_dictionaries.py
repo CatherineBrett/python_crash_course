@@ -62,15 +62,15 @@ river_locations = {
     "yangtze": "china",
 }
 
-for river, country in river_locations.items():
-    print(f"\nThe {river.title()} flows through {country.title()}.")
+for river, location in river_locations.items():
+    print(f"\nThe {river.title()} flows through {location.title()}.")
 
 print("\nHere is a list of every river in my river_locations dictionary:")
 for river in river_locations.keys():
     print(river.title())
 
 print(
-    "\nHere is a list of every country in my river_locations dictionary, with repetitions included:"
+    "\nHere is a list of every location in my river_locations dictionary, with repetitions included:"
 )
-for country in river_locations.values():
-    print(country.title())
+for location in river_locations.values():
+    print(location.title())
