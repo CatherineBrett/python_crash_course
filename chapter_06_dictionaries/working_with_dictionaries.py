@@ -56,21 +56,39 @@
 
 # Exercise 6-5
 
-river_locations = {
-    "yellow river": "china",
-    "mississippi": "north america",
-    "yangtze": "china",
+# river_locations = {
+#     "yellow river": "china",
+#     "mississippi": "north america",
+#     "yangtze": "china",
+# }
+
+# for river, location in river_locations.items():
+#     print(f"\nThe {river.title()} flows through {location.title()}.")
+
+# print("\nHere is a list of every river in my river_locations dictionary:")
+# for river in river_locations.keys():
+#     print(river.title())
+
+# print(
+#     "\nHere is a list of every location in my river_locations dictionary, with repetitions included:"
+# )
+# for location in river_locations.values():
+#     print(location.title())
+
+
+# Exercise 6-6
+
+favourite_languages = {
+    "jen": "python",
+    "sarah": "c",
+    "edward": "rust",
+    "phil": "python",
 }
 
-for river, location in river_locations.items():
-    print(f"\nThe {river.title()} flows through {location.title()}.")
+peeps_to_poll = ["catherine", "jen", "mike", "sarah", "martin"]
 
-print("\nHere is a list of every river in my river_locations dictionary:")
-for river in river_locations.keys():
-    print(river.title())
-
-print(
-    "\nHere is a list of every location in my river_locations dictionary, with repetitions included:"
-)
-for location in river_locations.values():
-    print(location.title())
+for name in peeps_to_poll:
+    if name in favourite_languages.keys():
+        print(f"Thank you for taking the poll, {name.title()}!")
+    else:
+        print(f"Hi, {name.title()}! Please take a moment to complete the poll.")
