@@ -66,32 +66,55 @@
 
 # Exercise 6-11
 
-cities = {
-    "birmingham": {
-        "country": "england",
-        "population": 1157603,
-        "fact": "Arthur Conan Doyle worked in the Aston area of Birmingham",
-    },
-    "liverpool": {
-        "country": "england",
-        "population": 496770,
-        "fact": "Musicians from the city have produced 58 No. 1 singles, "
-        "more than any other city in the world",
-    },
-    "manchester": {
-        "country": "england",
-        "population": 568996,
-        "fact": "The Guardian newspaper was founded in the city in 1821 "
-        "as The Manchester Guardian",
-    },
+# cities = {
+#     "birmingham": {
+#         "country": "england",
+#         "population": 1157603,
+#         "fact": "Arthur Conan Doyle worked in the Aston area of Birmingham",
+#     },
+#     "liverpool": {
+#         "country": "england",
+#         "population": 496770,
+#         "fact": "Musicians from the city have produced 58 No. 1 singles, "
+#         "more than any other city in the world",
+#     },
+#     "manchester": {
+#         "country": "england",
+#         "population": 568996,
+#         "fact": "The Guardian newspaper was founded in the city in 1821 "
+#         "as The Manchester Guardian",
+#     },
+# }
+
+# for city, city_info in cities.items():
+#     print(f"\nCity: {city.title()}")
+#     country = city_info["country"]
+#     population = city_info["population"]
+#     fact = city_info["fact"]
+
+#     print(f"\tCountry: {country.title()}")
+#     print(f"\tPopulation: {population}")
+#     print(f"\tFact: {fact}")
+
+
+# Exercise 6-12
+
+users =  {
+    "aeinstein": {
+        "first": "albert",
+        "last": "einstein",
+        "location": "princeton",
+        },
+
+    "mcurie": {
+        "first": "marie",
+        "last": "curie",
+        "location": "paris",
+        },
 }
 
-for city, city_info in cities.items():
-    print(f"\nCity: {city.title()}")
-    country = city_info["country"]
-    population = city_info["population"]
-    fact = city_info["fact"]
-
-    print(f"\tCountry: {country.title()}")
-    print(f"\tPopulation: {population}")
-    print(f"\tFact: {fact}")
+for username, user_info in users.items():
+    full_name = f"{user_info["first"].title()} {user_info["last"].title()}"
+    location = user_info["location"]
+    print(f"User {username}'s full name is {full_name} and their location is "
+          f"{location.title()}.")
