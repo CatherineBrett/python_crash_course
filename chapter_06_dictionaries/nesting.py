@@ -30,16 +30,35 @@
 
 # Exercise 6-9
 
-favorite_places = {
-    "jim": ["paris", "lille"],
-    "frank": ["berlin"],
-    "deirdre": ["seville", "lisbon", "madeira"],
+# favorite_places = {
+#     "jim": ["paris", "lille"],
+#     "frank": ["berlin"],
+#     "deirdre": ["seville", "lisbon", "madeira"],
+# }
+
+# for name, places in favorite_places.items():
+#     if len(places) < 2:
+#         print(f"\n{name.title()}'s favorite place is:")
+#     else:
+#         print(f"\n{name.title()}'s favorite places are:")
+#     for place in places:
+#         print(f"\t{place.title()}")
+
+
+# Exercise 6-10
+
+fave_numbers = {
+    "john": [1, 6],
+    "paul": [3],
+    "george": [9, 12, 20],
+    "ringo": [0, 300],
+    "pete": [7],
 }
 
-for name, places in favorite_places.items():
-    if len(places) < 2:
-        print(f"\n{name.title()}'s favorite place is:")
+for name, numbers in fave_numbers.items():
+    if len(numbers) == 1:
+        print(f"\n{name.title()}'s favorite number is:")
     else:
-        print(f"\n{name.title()}'s favorite places are:")
-    for place in places:
-        print(f"\t{place.title()}")
+        print(f"\n{name.title()}'s favorite numbers are:")
+    for number in numbers:
+        print(f"\t{number}")
