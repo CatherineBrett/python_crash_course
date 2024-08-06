@@ -48,12 +48,32 @@
 # Exercise 7-6
 # variation on Exercise 7-4, using a break statement to exit the loop:
 
-prompt = "\nEnter one pizza topping at a time. Type 'quit' to exit: "
+# prompt = "\nEnter one pizza topping at a time. Type 'quit' to exit: "
 
-while True:
-    topping = input(prompt)
+# while True:
+#     topping = input(prompt)
 
-    if topping == "quit":
-        break
+#     if topping == "quit":
+#         break
+#     else:
+#         print(f"Thank you. We have added {topping} to your pizza.")
+
+
+# variation on Exercise 7-5, using a flag to control the loop:
+
+prompt = "\nTo find out the ticket price, enter the moviegoer's age."
+prompt += "\nAlternatively, type 'quit' to exit: "
+
+active = True
+
+while active:
+    response = input(prompt)
+
+    if response == "quit":
+        active = False
+    elif int(response) < 3:
+        print("Children under 3yo go free!")
+    elif int(response) <= 12:
+        print("Tickets for children between the ages of 3 and 12 are $10.")
     else:
-        print(f"Thank you. We have added {topping} to your pizza.")
+        print("Tickets for adults and children over 12 are $15.")
