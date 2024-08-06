@@ -81,17 +81,26 @@
 
 # variation on Exercise 7-5, using a break statement to exit the loop:
 
-prompt = "\nTo find out the ticket price, enter the moviegoer's age."
-prompt += "\nAlternatively, type 'quit' to exit: "
+# prompt = "\nTo find out the ticket price, enter the moviegoer's age."
+# prompt += "\nAlternatively, type 'quit' to exit: "
 
-while True:
-    response = input(prompt)
+# while True:
+#     response = input(prompt)
 
-    if response == "quit":
-        break
-    elif int(response) < 3:
-        print("Children under 3yo go free!")
-    elif int(response) <= 12:
-        print("Tickets for children between the ages of 3 and 12 are $10.")
-    else:
-        print("Tickets for adults and children over 12 are $15.")
+#     if response == "quit":
+#         break
+#     elif int(response) < 3:
+#         print("Children under 3yo go free!")
+#     elif int(response) <= 12:
+#         print("Tickets for children between the ages of 3 and 12 are $10.")
+#     else:
+#         print("Tickets for adults and children over 12 are $15.")
+
+
+# Exercise 7-7: Deliberate infinite loop
+
+x = 1
+
+while x <= 1:
+    print(x)
+    x -= 1
