@@ -16,19 +16,34 @@
 # Exercise 8-13
 
 
-def build_profile(first, last, **user_info):
-    """Build a dictionary containing everything we know about a user."""
-    user_info["first_name"] = first
-    user_info["last_name"] = last
-    return user_info
+# def build_profile(first, last, **user_info):
+#     """Build a dictionary containing everything we know about a user."""
+#     user_info["first_name"] = first
+#     user_info["last_name"] = last
+#     return user_info
 
 
-user_profile = build_profile(
-    "catherine",
-    "brett",
-    middle_name="jane",
-    location="birmingham",
-    field="software engineering",
-)
+# user_profile = build_profile(
+#     "catherine",
+#     "brett",
+#     middle_name="jane",
+#     location="birmingham",
+#     field="software engineering",
+# )
 
-print(user_profile)
+# print(user_profile)
+
+
+# Exercise 8-14
+
+
+def build_car_profile(manufacturer, model, **car_info):
+    """Build a dictionary containing information about a car."""
+    car_info["manufacturer"] = manufacturer
+    car_info["model"] = model
+    return car_info
+
+
+car = build_car_profile("honda", "civic", colour="grey", doors=5)
+
+print(car)
