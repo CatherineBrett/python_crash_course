@@ -18,9 +18,20 @@ class Restaurant:
         print(f"{self.name.title()} is open.")
 
 
-restaurant = Restaurant("la plancha", "spanish")
+# restaurant = Restaurant("la plancha", "spanish")
 
-print(restaurant.name)
-print(restaurant.cuisine_type)
-restaurant.describe_restaurant()
-restaurant.open_restaurant()
+# print(restaurant.name)
+# print(restaurant.cuisine_type)
+# restaurant.describe_restaurant()
+# restaurant.open_restaurant()
+
+
+# Exercise 9-2
+
+restaurant_one = Restaurant("dishoom", "indian")
+restaurant_two = Restaurant("gaucho", "argentinian")
+restaurant_three = Restaurant("sabai sabai", "thai")
+
+restaurant_one.describe_restaurant()
+restaurant_two.describe_restaurant()
+restaurant_three.describe_restaurant()
