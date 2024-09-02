@@ -89,6 +89,46 @@ class User:
         self.login_attempts = 0
 
 
+# class Admin(User):
+#     """Represent aspects of a User, specific to an administrator."""
+
+#     def __init__(self, first_name, last_name, username, email, age):
+#         """
+#         Initialise attributes of the parent class.
+#         Then initialise attributes specific to an administrator.
+#         """
+#         super().__init__(first_name, last_name, username, email, age)
+#         self.privileges = ["delete other users' posts", "delete users"]
+
+#     def show_privileges(self):
+#         """Print a statement listing an admin user's privileges."""
+#         print("Admin users can also:")
+#         for privilege in self.privileges:
+#             print(f"\t- {privilege}")
+
+
+# catherine = Admin("catherine", "brett", "admin1", "admin1@email.com", 41)
+
+# catherine.show_privileges()
+
+
+# Exercise 9-8
+
+
+class Privileges:
+    """A simple attempt to model privileges for an administrator."""
+
+    def __init__(self):
+        """Initialise privileges' attributes."""
+        self.privileges = ["delete other users' posts", "delete users"]
+
+    def show_privileges(self):
+        """Print a statement listing an admin user's privileges."""
+        print("Admin users can also:")
+        for privilege in self.privileges:
+            (print(f"\t- {privilege}"))
+
+
 class Admin(User):
     """Represent aspects of a User, specific to an administrator."""
 
@@ -98,15 +138,9 @@ class Admin(User):
         Then initialise attributes specific to an administrator.
         """
         super().__init__(first_name, last_name, username, email, age)
-        self.privileges = ["delete other users' posts", "delete users"]
-
-    def show_privileges(self):
-        """Print a statement listing an admin user's privileges."""
-        print("Admin users can also:")
-        for privilege in self.privileges:
-            print(f"\t- {privilege}")
+        self.privileges = Privileges()
 
 
-catherine = Admin("catherine", "brett", "admin1", "admin1@email.com", 41)
+catherine = Admin("catherine", "brett", "cbrett", "cbrett@email.com", 41)
 
-catherine.show_privileges()
+catherine.privileges.show_privileges()
