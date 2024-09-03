@@ -56,37 +56,37 @@
 # Exercise 9-7
 
 
-class User:
-    """A simple attempt to model a user."""
+# class User:
+#     """A simple attempt to model a user."""
 
-    def __init__(self, first_name, last_name, username, email, age):
-        """Initialise a user's attributes."""
-        self.first_name = first_name
-        self.last_name = last_name
-        self.username = username
-        self.email = email
-        self.age = age
-        self.login_attempts = 0
+#     def __init__(self, first_name, last_name, username, email, age):
+#         """Initialise a user's attributes."""
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.username = username
+#         self.email = email
+#         self.age = age
+#         self.login_attempts = 0
 
-    def describe_user(self):
-        """Print a summary of the user's information."""
-        print(
-            f"The user with username '{self.username}' is called "
-            f"{self.first_name.title()} {self.last_name.title()} and they are"
-            f" {self.age} years old. Their email address is {self.email}."
-        )
+#     def describe_user(self):
+#         """Print a summary of the user's information."""
+#         print(
+#             f"The user with username '{self.username}' is called "
+#             f"{self.first_name.title()} {self.last_name.title()} and they are"
+#             f" {self.age} years old. Their email address is {self.email}."
+#         )
 
-    def greet_user(self):
-        """Print a personalised greeting to the user."""
-        print(f"Hello there, {self.username}!")
+#     def greet_user(self):
+#         """Print a personalised greeting to the user."""
+#         print(f"Hello there, {self.username}!")
 
-    def increment_login_attempts(self):
-        """Increment no. of login attempts by 1."""
-        self.login_attempts += 1
+#     def increment_login_attempts(self):
+#         """Increment no. of login attempts by 1."""
+#         self.login_attempts += 1
 
-    def reset_login_attempts(self):
-        "Reset the no. of login attempts to 0."
-        self.login_attempts = 0
+#     def reset_login_attempts(self):
+#         "Reset the no. of login attempts to 0."
+#         self.login_attempts = 0
 
 
 # class Admin(User):
@@ -115,32 +115,85 @@ class User:
 # Exercise 9-8
 
 
-class Privileges:
-    """A simple attempt to model privileges for an administrator."""
+# class Privileges:
+#     """A simple attempt to model privileges for an administrator."""
 
-    def __init__(self):
-        """Initialise privileges' attributes."""
-        self.privileges = ["delete other users' posts", "delete users"]
+#     def __init__(self):
+#         """Initialise privileges' attributes."""
+#         self.privileges = ["delete other users' posts", "delete users"]
 
-    def show_privileges(self):
-        """Print a statement listing an admin user's privileges."""
-        print("Admin users can also:")
-        for privilege in self.privileges:
-            (print(f"\t- {privilege}"))
+#     def show_privileges(self):
+#         """Print a statement listing an admin user's privileges."""
+#         print("Admin users can also:")
+#         for privilege in self.privileges:
+#             (print(f"\t- {privilege}"))
 
 
-class Admin(User):
-    """Represent aspects of a User, specific to an administrator."""
+# class Admin(User):
+#     """Represent aspects of a User, specific to an administrator."""
 
-    def __init__(self, first_name, last_name, username, email, age):
+#     def __init__(self, first_name, last_name, username, email, age):
+#         """
+#         Initialise attributes of the parent class.
+#         Then initialise attributes specific to an administrator.
+#         """
+#         super().__init__(first_name, last_name, username, email, age)
+#         self.privileges = Privileges()
+
+
+# catherine = Admin("catherine", "brett", "cbrett", "cbrett@email.com", 41)
+
+# catherine.privileges.show_privileges()
+
+
+# Exercise 9-9
+
+
+class Car:
+    """A simple attempt to represent a car."""
+
+    def __init__(self, make, model, year):
+        """Initialise attributes to describe a car."""
+        self.make = make
+        self.model = model
+        self.year = year
+
+
+class Battery:
+    """A simple attempt to model a battery for an electric car."""
+
+    def __init__(self, battery_size=40):
+        """Initilise the battery's attributes."""
+        self.battery_size = battery_size
+
+    def get_car_range(self):
+        """Print a statement about the range this battery provides."""
+        if self.battery_size == 40:
+            car_range = 150
+        elif self.battery_size == 65:
+            car_range = 225
+
+        print(f"This car can go about {car_range} miles on a full charge.")
+
+    def upgrade_battery(self):
+        """Set the battery size's capacity to 65 if it isn't already."""
+        if self.battery_size != 65:
+            self.battery_size = 65
+
+
+class ElectricCar(Car):
+    """Represent aspects of a car, specific to electric vehicles."""
+
+    def __init__(self, make, model, year):
         """
         Initialise attributes of the parent class.
-        Then initialise attributes specific to an administrator.
+        Then initialise attributes specific to an electric car.
         """
-        super().__init__(first_name, last_name, username, email, age)
-        self.privileges = Privileges()
+        super().__init__(make, model, year)
+        self.battery = Battery()
 
 
-catherine = Admin("catherine", "brett", "cbrett", "cbrett@email.com", 41)
-
-catherine.privileges.show_privileges()
+my_electric_car = ElectricCar("nissan", "leaf", 2024)
+my_electric_car.battery.get_car_range()
+my_electric_car.battery.upgrade_battery()
+my_electric_car.battery.get_car_range()
