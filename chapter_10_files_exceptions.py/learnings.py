@@ -1,7 +1,7 @@
 from pathlib import Path
 
 path = Path("learning_python.txt")
-contents = path.read_text()
+contents = path.read_text(encoding="utf-8")
 print(f"{contents}\n")
 
 lines = contents.splitlines()
