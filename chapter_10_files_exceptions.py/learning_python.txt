@@ -8,7 +8,7 @@ In Python you can access and modify individual elements in a dictionary.
 In Python you can nest dictionaries in a list, lists in a dictionary, or a dictionary in a dictionary.
 In Python you can use input() to allow users to provide their own information.
 In Python you can use positional and keyword arguments.
-In Python you can accept an arbitary number of arguments.
+In Python you can accept an arbitrary number of arguments.
 In Python you can store information in a class and create instances from that class.
 In Python you can modify the attributes of an instance directly and through methods.
 In Python you can store functions and classes in separate files called modules.
