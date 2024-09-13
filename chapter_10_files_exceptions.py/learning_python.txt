@@ -1,0 +1,14 @@
+In Python you can use whitespace to organise output neatly.
+In Python you can use comments to explain your code.
+In Python you can sort lists either permanently or temporarily.
+In Python you can slice a list to work with a subset of items.
+In Python you can copy lists using a slice.
+In Python you can write conditional tests which always evaluate to True or False.
+In Python you can access and modify individual elements in a dictionary.
+In Python you can nest dictionaries in a list, lists in a dictionary, or a dictionary in a dictionary.
+In Python you can use input() to allow users to provide their own information.
+In Python you can use positional and keyword arguments.
+In Python you can accept an arbitary number of arguments.
+In Python you can store information in a class and create instances from that class.
+In Python you can modify the attributes of an instance directly and through methods.
+In Python you can store functions and classes in separate files called modules.
